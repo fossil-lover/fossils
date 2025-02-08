@@ -1,0 +1,1 @@
+print("I have a fossil collection.")
