@@ -1,0 +1,94 @@
+'''
+Bowling cards details:
+	normal delivery - 6 cards
+	caught - 3 cards
+	run out - 3 cards
+	spin - 2 cards
+	bye - 2 cards
+	clean bold - 1 card
+	no bowl - 1 card
+
+Batting cards details:
+	0 runs - 2 cards
+	1 run - 4 cards
+	2 run - 4 cards
+	3 runs - 4 cards
+	4 run - 2 cards
+	6 runs - 2 cards
+
+3 over game :
+	1. In first over Randomly pick 6 cards from bowling and batting deck seperately
+		and remove those from original batting and bowling deck
+	2. In first over Randomly pick 6 cards from leftover bowling and batting deck seperately
+		and remove those from leftover batting and bowling deck.
+	3. In first over Randomly pick 6 cards from leftover bowling and batting deck seperately
+		and remove those from leftover batting and bowling deck.
+
+if bowler puts "no bowl" card
+	add (any batting card * 2 ) + 1 to the score.
+
+if bowler puts "SPIN 1" card
+	if batter puts 1 or 2 runs card
+		then no run on this delivery
+	else
+		we will add 3 or 4 or 6 depending on the batting card put.
+
+if bowler puts "SPIN 2" card
+	if batter puts 2 or 3 runs card
+		then no run on this delivery
+	else
+		we will add 1 or 4 or 6 depending on the batting card put.
+
+if bowler puts bye1 card:
+ 	if batter puts 4 runs card
+ 		then 4 runs will be added
+	else
+		0 run will be given.
+
+if bowler puts bye2 card:
+ 	if batter puts 1 runs card
+ 		then 1 runs will be added
+	else
+		0 run will be given.
+
+if bowler puts "NORMAL delivery" card
+	add any batting card
+
+if bowler puts "CAUGHT 1" card
+	if batter puts 1 or 2 or 6
+		then runs will be added
+	else batter puts 3 or 4
+		then batsman is out and no runs added.
+
+if bowler puts "CAUGHT 2" card
+	if batter puts 1 or 2 or 3
+		then runs will be added
+	elif batter puts 4 or 6
+		then batsman is out and no runs added.
+
+if bowler puts "CAUGHT 3" card
+	if batter puts 1 or 2 or 4
+		then runs will be added
+	elif batter puts 3 or 6
+		then batsman is out and no runs added.
+
+if bowler puts "Run Out 1 " card
+	if batter puts 2,3,4,6
+		then runs will be added
+	elif batter puts 1
+		then batsman is out and no runs added.
+
+if bowler puts "Run Out 2 " card
+	if batter puts 1,4,6
+		then runs will be added
+	elif batter puts 2,3
+		then batsman is out and no runs added.
+
+if bowler puts "Run Out 3 " card
+	if batter puts 3,4,6
+		then runs will be added
+	elif batter puts 1, 2
+		then batsman is out and no runs added.
+
+
+'''
